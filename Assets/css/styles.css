@@ -290,10 +290,10 @@ img {
   border-radius: 0.5rem;
   z-index: var(--z-back);
 }
-.skills__html {
+.skills_python {
   width: 95%;
 }
-.skills__css {
+.skills_sql {
   width: 85%;
 }
 .skills__js {
@@ -316,9 +316,15 @@ img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
+  display: flex; /* Ensures proper alignment */
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
 }
 .work__img img {
-  transition: 1s;
+  width: 300px;
+  height: 200px;
+  object-fit: contain; /* Ensures the entire image is visible without cropping */
+  border-radius: 10px;
 }
 .work__img img:hover {
   transform: scale(1.1);
